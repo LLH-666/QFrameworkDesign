@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace FrameworkDesign.Example
+namespace QFramework.Example
 {
     public interface IAchievementSystem : ISystem
     {

@@ -13,7 +13,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{ad7811b9-dd29-7235-f903-1a3464506631}</ProjectGuid>
+    <ProjectGuid>{f6668b73-aff3-a8be-576f-c9c4b06efedd}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -52,54 +52,37 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\FrameworkDesign\Framework\Architecture\IModel.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\Architecture\ISystem.cs" />
+     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\UI\GameOverPanel.cs" />
+     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\UI\GamePanel.cs" />
+     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Event\OnMissEvent.cs" />
+     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\System\ICountDownSystem.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Command\StartGameCommand.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\CountApp\AddCountCommand.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\Architecture\IController.cs" />
+     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Event\OnKillEnemyEvent.cs" />
+     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Command\MissCommand.cs" />
+     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Event\OnCountDownEndEvent.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Model\GameModel.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\IOC\IOCExample.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Game\Enemy.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\Singleton\Singleton.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\IOC\IOCContainer.cs" />
+     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Game\ErrorArea.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Event\GamePassEvent.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\CountApp\SubCountCommand.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\Command\ICommand.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\UI\GameStartPanel.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\CountApp\IAchievementSystem.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\Architecture\Architecture.cs" />
+     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Command\BuyLifeCommand.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\UI\UI.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Command\KillEnemyCommand.cs" />
+     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\UI\GamePassPanel.cs" />
+     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\System\IAchievementSystem.cs" />
+     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Utility\IStorage.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\CountApp\IStorage.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\CountApp\CounterApp.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\BindableProperty\BindableProperty.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\PointGame.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\Architecture\IBelongToArchitecture.cs" />
+     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\System\IScoreSystem.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\CountApp\CounterViewController.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Event\GameStartEvent.cs" />
      <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Game\Game.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\Architecture\ICanSetArchitecture.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\Architecture\IUtility.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\Architecture\Rule\ICanGetUtility.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\Architecture\Rule\ICanGetModel.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\Architecture\Rule\ICanGetSystem.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\Architecture\Rule\ICanSendCommand.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\Event\TypeEventSystem.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\Architecture\Rule\ICanSendEvent.cs" />
-     <Compile Include="Assets\FrameworkDesign\Framework\Architecture\Rule\ICanRegisterEvent.cs" />
-     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Utility\IStorage.cs" />
-     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\System\IScoreSystem.cs" />
-     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Command\MissCommand.cs" />
-     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Game\ErrorArea.cs" />
-     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Event\OnKillEnemyEvent.cs" />
-     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Event\OnMissEvent.cs" />
-     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Event\OnCountDownEndEvent.cs" />
-     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\System\ICountDownSystem.cs" />
-     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\System\IAchievementSystem.cs" />
-     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\Command\BuyLifeCommand.cs" />
-     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\UI\GamePanel.cs" />
-     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\UI\GamePassPanel.cs" />
-     <Compile Include="Assets\FrameworkDesign\Example\PointGame\Scripts\UI\GameOverPanel.cs" />
+     <Compile Include="Assets\QFramework.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.9f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -674,34 +657,34 @@
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.9f1c1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.DeviceSimulator.Editor">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

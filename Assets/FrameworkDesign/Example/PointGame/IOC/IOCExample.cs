@@ -1,7 +1,7 @@
-using FrameworkDesign;
+using QFramework;
 using UnityEngine;
 
-namespace FrameworkDesign.Example
+namespace QFramework.Example
 {
     public class IOCExample : MonoBehaviour
     {

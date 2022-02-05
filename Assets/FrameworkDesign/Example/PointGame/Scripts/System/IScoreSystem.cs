@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FrameworkDesign.Example
+namespace QFramework.Example
 {
     public interface IScoreSystem : ISystem
     {

@@ -1,11 +1,11 @@
 using System;
-using FrameworkDesign;
+using QFramework;
 using UnityEditor;
 using UnityEngine;
 
 namespace CounterApp.Editor
 {
-    public class EditorCounterApp : AbstractEditorWindowCounterAppController
+    public class EditorCounterApp : EditorWindow,IController
     {
         /// <summary>
         /// 打开窗口
@@ -39,6 +39,11 @@ namespace CounterApp.Editor
             {
                 this.SendCommand<SubCountCommand>();
             }
+        }
+
+        public IArchitecture GetArchitecture()
+        {
+            return CounterApp.Interface;
         }
     }
 }

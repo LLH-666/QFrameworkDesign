@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace FrameworkDesign.Example
+namespace QFramework.Example
 {
-    public class Game : AbstractPointGameController
+    public class Game : MonoBehaviour,IController
     {
         void Start()
         {
@@ -32,6 +32,11 @@ namespace FrameworkDesign.Example
         private void OnDestroy()
         {
             this.UnRegisterEvent<GameStartEvent>(OnGameStart);
+        }
+
+        public IArchitecture GetArchitecture()
+        {
+            return PointGame.Interface;
         }
     }
 }

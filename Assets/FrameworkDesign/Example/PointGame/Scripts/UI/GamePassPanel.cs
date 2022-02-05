@@ -2,9 +2,9 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FrameworkDesign.Example
+namespace QFramework.Example
 {
-    public class GamePassPanel : AbstractPointGameController
+    public class GamePassPanel : MonoBehaviour,IController
     {
         private void Start()
         {
@@ -35,6 +35,11 @@ namespace FrameworkDesign.Example
         private void OnDestroy()
         {
             this.UnRegisterEvent<GamePassEvent>(OnGamePass);
+        }
+
+        public IArchitecture GetArchitecture()
+        {
+            return PointGame.Interface;
         }
     }
 }

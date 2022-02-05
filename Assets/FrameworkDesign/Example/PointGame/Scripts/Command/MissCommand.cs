@@ -1,4 +1,4 @@
-namespace FrameworkDesign.Example
+namespace QFramework.Example
 {
     public class MissCommand : AbstractCommand
     {

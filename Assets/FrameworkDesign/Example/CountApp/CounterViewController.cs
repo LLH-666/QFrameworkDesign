@@ -1,11 +1,11 @@
 using System;
-using FrameworkDesign;
+using QFramework;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace CounterApp
 {
-    public class CounterViewController : AbstractCounterAppController
+    public class CounterViewController : MonoBehaviour,IController
     {
         private ICounterModel mCounterModel; 
         
@@ -13,7 +13,7 @@ namespace CounterApp
         {
             mCounterModel = this.GetModel<ICounterModel>();
 
-            mCounterModel.Count.RegisterOnValueChanged(OnCountChange);
+            mCounterModel.Count.Register(OnCountChange);
 
             OnCountChange(mCounterModel.Count.Value);
 
@@ -39,9 +39,14 @@ namespace CounterApp
 
         private void OnDestroy()
         {
-            mCounterModel.Count.UnRegisterOnValueChanged(OnCountChange);
+            mCounterModel.Count.UnRegister(OnCountChange);
 
             mCounterModel = null;
+        }
+
+        public IArchitecture GetArchitecture()
+        {
+            return CounterApp.Interface;
         }
     }
 
@@ -58,7 +63,7 @@ namespace CounterApp
             
             Count.Value = storage.LoadInt("COUNTER_COUNT", 0);
 
-            Count.RegisterOnValueChanged(count =>
+            Count.Register(count =>
             {
                 storage.SaveInt("COUNTER_COUNT", count);
             });

@@ -13,7 +13,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{ec214174-c15c-9b9f-6603-331e6d3dc0ee}</ProjectGuid>
+    <ProjectGuid>{94cfa9ec-cc2f-24da-ea1b-ce1947698bce}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -291,7 +291,7 @@
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.9f1c1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.9f1c1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -645,45 +645,45 @@
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.9f1c1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.DeviceSimulator.Editor">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/llh/UnityProjects/PersonalProjects/FrameworkDesign/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/llh/UnityProjects/PersonalProjects/QFrameworkDesign/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{ad7811b9-dd29-7235-f903-1a3464506631}</Project>
+      <Project>{f6668b73-aff3-a8be-576f-c9c4b06efedd}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,6 +1,6 @@
-using FrameworkDesign;
+using QFramework;
 
-namespace FrameworkDesign.Example
+namespace QFramework.Example
 {
     public class KillEnemyCommand : AbstractCommand
     {

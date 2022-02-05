@@ -1,4 +1,4 @@
-using FrameworkDesign;
+using QFramework;
 using UnityEngine;
 
 namespace CounterApp
@@ -14,7 +14,7 @@ namespace CounterApp
         {
             var counterModel = this.GetModel<ICounterModel>();
             var previous = counterModel.Count.Value;
-            counterModel.Count.RegisterOnValueChanged(newCount =>
+            counterModel.Count.Register(newCount =>
             {
                 if (newCount >= 10 && previous < 10)
                 {

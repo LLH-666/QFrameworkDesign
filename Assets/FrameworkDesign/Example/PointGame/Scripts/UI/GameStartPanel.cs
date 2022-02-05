@@ -2,9 +2,9 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FrameworkDesign.Example
+namespace QFramework.Example
 {
-    public class GameStartPanel : AbstractPointGameController
+    public class GameStartPanel : MonoBehaviour,IController
     {
         private IGameModel mGameModel;
         
@@ -27,9 +27,9 @@ namespace FrameworkDesign.Example
 
             mGameModel = this.GetModel<IGameModel>();
 
-            mGameModel.Gold.RegisterOnValueChanged(OnGoldValueChanged);
-            mGameModel.Life.RegisterOnValueChanged(OnLifeValueChanged);
-            mGameModel.BestScore.RegisterOnValueChanged(OnBestScoreValueChanged);
+            mGameModel.Gold.Register(OnGoldValueChanged);
+            mGameModel.Life.Register(OnLifeValueChanged);
+            mGameModel.BestScore.Register(OnBestScoreValueChanged);
             
             OnGoldValueChanged(mGameModel.Gold.Value);
             OnLifeValueChanged(mGameModel.Life.Value);
@@ -62,10 +62,15 @@ namespace FrameworkDesign.Example
 
         private void OnDestroy()
         {
-            mGameModel.Gold.UnRegisterOnValueChanged(OnGoldValueChanged);
-            mGameModel.Life.UnRegisterOnValueChanged(OnLifeValueChanged);
+            mGameModel.Gold.UnRegister(OnGoldValueChanged);
+            mGameModel.Life.UnRegister(OnLifeValueChanged);
 
             mGameModel = null;
+        }
+
+        public IArchitecture GetArchitecture()
+        {
+            return PointGame.Interface;
         }
     }
 }

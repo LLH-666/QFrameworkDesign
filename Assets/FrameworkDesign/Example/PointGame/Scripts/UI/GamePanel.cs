@@ -2,9 +2,9 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FrameworkDesign.Example
+namespace QFramework.Example
 {
-    public class GamePanel : AbstractPointGameController
+    public class GamePanel : MonoBehaviour,IController
     {
         private ICountDownSystem mCountDownSystem;
         private IGameModel mGameModel;
@@ -14,9 +14,9 @@ namespace FrameworkDesign.Example
             mCountDownSystem = this.GetSystem<ICountDownSystem>();
             mGameModel = this.GetModel<IGameModel>();
             
-            mGameModel.Gold.RegisterOnValueChanged(OnGoldValueChanged);
-            mGameModel.Life.RegisterOnValueChanged(OnLifeValueChanged);
-            mGameModel.Score.RegisterOnValueChanged(OnScoreValueChanged);
+            mGameModel.Gold.Register(OnGoldValueChanged);
+            mGameModel.Life.Register(OnLifeValueChanged);
+            mGameModel.Score.Register(OnScoreValueChanged);
 
             // 第一次需要调用一下
             OnGoldValueChanged(mGameModel.Gold.Value);
@@ -54,12 +54,16 @@ namespace FrameworkDesign.Example
         
         private void OnDestroy()
         {
-            mGameModel.Gold.UnRegisterOnValueChanged(OnGoldValueChanged);
-            mGameModel.Life.UnRegisterOnValueChanged(OnLifeValueChanged);
-            mGameModel.Score.UnRegisterOnValueChanged(OnScoreValueChanged);
+            mGameModel.Gold.UnRegister(OnGoldValueChanged);
+            mGameModel.Life.UnRegister(OnLifeValueChanged);
+            mGameModel.Score.UnRegister(OnScoreValueChanged);
             mGameModel = null;
             mCountDownSystem = null;
         }
 
+        public IArchitecture GetArchitecture()
+        {
+            return PointGame.Interface;
+        }
     }
 }
